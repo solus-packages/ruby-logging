@@ -1,0 +1,17 @@
+name       : ruby-logging
+version    : 2.2.2
+release    : 1
+source     :
+    - https://rubygems.org/downloads/logging-2.2.2.gem : 963359dbdab725a3320eab179017d20d5b9731d7148e1efa8432c184a48a461a
+license    : MIT
+component  : programming.ruby
+summary    : RubyGem - logging
+description: |
+    Logging is a flexible logging library for use in Ruby programs based on the design of Java's log4j library. It features a hierarchical logging system, custom level names, multiple output destinations per log event, custom formatting, and more.
+builddeps  :
+    - pkgconfig(ruby-2.3)
+rundeps    :
+    - ruby-little-plugger
+    - ruby-multi_json
+install    : |
+    %gem_install
